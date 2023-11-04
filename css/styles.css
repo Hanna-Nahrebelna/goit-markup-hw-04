@@ -126,7 +126,8 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE, #2E2F42);    
+    color: var(--NAVY-BLUE, #2E2F42);
+    transition: color 250ms linear ;
 }
 
 .menu-link:hover,
@@ -300,8 +301,30 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;    
-    
+    color: #434455;  
+}
+
+.social-list {
+    column-gap: 24px;
+    justify-content: center;
+    margin-top: 8px;    
+}
+
+.social-list-link {
+    display: block;
+    line-height: 0;
+    border-radius: 40px;
+    background-color: #4D5AE5;
+    padding: 12px;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    stroke: #404BBF;
+}
+
+.social-list-icon {
+    transition: stroke 250ms linear;
 }
 
 .our-portfolio {
