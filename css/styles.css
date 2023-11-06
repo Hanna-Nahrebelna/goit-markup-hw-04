@@ -488,4 +488,10 @@ transform: translateY(0%);
     background-color: #4D5AE5;
 }
 
+.footer-social-list:hover,
+.footer-social-list:focus {
+    background-color: #31D0AA;
+    transition: 250ms linear;
+}
+
 /* ========/FOOTER============= */
