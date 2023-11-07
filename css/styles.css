@@ -77,20 +77,6 @@ body {
     align-items: center;    
 }
 
-.page-navigation::after {
-    position: absolute;
-    top: 65.5px;
-    left: 384px;
-    content: "";
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-    background: #404BBF;
-    transform: translateY(100%);
-    transition: transform 250ms linear;
-}
-
-
 .container-header {    
     display: flex;
     justify-content: space-between;
@@ -170,6 +156,23 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
+}
+
+.page-navigation::after {
+    position: absolute;
+    top: 65.5px;
+    left: 384px;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404BBF;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+
+.menu-link:hover .page-navigation:after {
+    transform: translateY(0%);
 }
 
 /* ========/HEADR STYLES======== */
