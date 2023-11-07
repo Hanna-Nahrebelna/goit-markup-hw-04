@@ -51,7 +51,6 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -75,8 +74,22 @@ body {
 
 .page-navigation {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
+
+.page-navigation::after {
+    position: absolute;
+    top: 65.5px;
+    left: 384px;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404BBF;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+
 
 .container-header {    
     display: flex;
@@ -101,18 +114,20 @@ body {
 }
 
 .menu-link {
+    position: relative;
     padding: 24px 0;
+    overflow: hidden;
 }
 
 .logotype {
+    margin-right: 76px;    
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
-    margin-right: 76px;
+    color: #4d5ae5;    
 }
 
 .span-headr {
@@ -393,7 +408,7 @@ padding-bottom: 120px;
 }
 
 .border-portfolio {
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border: 1px solid #E7E9FC;
     padding: 32px 16px;
     border-top: none;
 }
