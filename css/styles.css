@@ -97,12 +97,13 @@ body {
     column-gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
+    overflow: hidden;
 }
 
-.menu-link {
-    position: relative;
+.menu-link {    
     padding: 24px 0;
-    overflow: hidden;
+    
 }
 
 .logotype {
@@ -127,7 +128,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: #2E2F42;
     transition: color 250ms linear ;
 }
 
@@ -171,7 +172,7 @@ body {
     transition: transform 250ms linear;
 }
 
-.menu-link:hover .page-navigation:after {
+.menu-item:hover .page-navigation::after {
     transform: translateY(0%);
 }
 
@@ -286,6 +287,10 @@ body {
     background: #F4F4FD;
 }
 
+.imag-column-benefits {
+    fill: #2E2F42;         
+}
+
 
 .list-team {
     width: calc((100% - 96px) / 4);
@@ -363,6 +368,7 @@ body {
 
 .social-list-icon {
     transition: stroke 250ms linear;
+    fill: #F4F4FD; 
 }
 
 .our-portfolio {
@@ -496,6 +502,10 @@ transform: translateY(0%);
 .footer-social-icon {
     display: flex;
     column-gap: 16px;    
+}
+
+.footer-social-icon {
+    fill: #F4F4FD;
 }
 
 .footer-social-list {   
