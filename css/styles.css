@@ -70,6 +70,10 @@ body {
 /* ========HEADR STYLES======== */
 .page-header {    
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 
+    0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08)
 }
 
 .page-navigation {
@@ -129,7 +133,16 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    transition: color 250ms linear ;
+    transition: color 250ms linear;
+}
+
+.menu-link-studio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404bbf;    
 }
 
 .menu-link:hover,
