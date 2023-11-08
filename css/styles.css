@@ -552,19 +552,16 @@ transform: translateY(0%);
 }
 
 .footer-social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 8px;    
-    width: 40px;
-    height: 40px;
     flex-shrink: 0;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
     background-color: #4d5ae5;    
 }
 
-.icon-footer:hover,
-.icon-footer:focus {
+.footer-sosial:hover,
+.footer-sosial:focus {
     background-color: #31D0AA;    
 }
 
