@@ -175,7 +175,7 @@ body {
     color: #404bbf;
 }
 
-.page-navigation::after {
+.menu-item-stodio::after {
     position: absolute;
     top: 65.5px;
     left: 0;
@@ -188,7 +188,7 @@ body {
     transform: translateY(100%);    
 }
 
-.menu-item:hover .page-navigation::after {
+.menu-item-stodio:hover .menu-link-studio {
     transform: translateY(0%);
 }
 
